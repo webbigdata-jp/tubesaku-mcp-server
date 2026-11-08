@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tubesaku-creator-insights",
+  "version": "1.0.2",
+  "description": "Read-only search of TubeSaku's collected data on emerging Japanese VTubers and gaming creators: upcoming streams and debuts, current live streams, debut and activity records, game trends among small creators, and cover-song ideas.",
+  "author": {
+    "name": "GIPU Limited",
+    "url": "https://tubesaku.com/en/"
+  },
+  "homepage": "https://tubesaku.com/en/mcp-help",
+  "keywords": [
+    "vtuber",
+    "youtuber",
+    "japan",
+    "live streaming",
+    "gaming",
+    "game trends",
+    "cover songs",
+    "debut",
+    "youtube",
+    "videos",
+    "trends"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "TubeSaku Creator Insights",
+        "shortDescription": "Find emerging Japanese VTubers",
+        "longDescription": "TubeSaku Creator Insights helps you discover emerging Japanese VTubers and gaming creators who rarely appear in general search results.\n\nWhat you can do:\n- Find upcoming streams and debut (first) streams by date, time of day (JST), and genre\n- See which streams were live at TubeSaku's latest observation\n- Search VTuber debut and activity records by debut date, game played, or keyword\n- See which games were in demand among creators with 10,000 subscribers or fewer, week by week\n- Find cover-song ideas based on original-song popularity and recent competition\n\nWho it is for: fans looking for new creators to follow, creators looking for peers from the same debut period or ideas for their next stream, and people researching Japan's small-creator scene.\n\nLimitations: results reflect data collected and classified by TubeSaku, not all of YouTube. Live status reflects the latest observation and may have changed. Each search returns up to 10 results, and each session allows up to 20 calls in total. TubeSaku does not provide contact details or personal information about creators, and its terms prohibit using results to compile lists for unsolicited commercial outreach. All tools are read-only.",
+        "developerName": "GIPU Limited",
+        "category": "Entertainment",
+        "capabilities": [
+          "Search upcoming streams and debuts by Japanese VTubers and YouTubers",
+          "Check live streams by Japanese VTubers and YouTubers",
+          "Search VTuber debut and activity records",
+          "Weekly game trends among YouTubers with 10K subscribers or fewer",
+          "Cover-song ideas for VTubers and YouTubers"
+        ],
+        "websiteURL": "https://tubesaku.com/en/",
+        "supportURL": "https://tubesaku.com/en/contact",
+        "privacyPolicyURL": "https://tubesaku.com/en/privacy",
+        "termsOfServiceURL": "https://tubesaku.com/en/terms",
+        "defaultPrompt": [
+          "Which new VTubers have debut streams scheduled this week?",
+          "What games are trending among creators under 10K subscribers?",
+          "Find VTubers who debuted in 2026 and play horror games."
+        ],
+        "brandColor": "#FF4F45",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/webbigdata-jp/tubesaku-mcp-server"
+}

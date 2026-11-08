@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tubesaku": {
+      "type": "streamable_http",
+      "url": "https://tubesaku.com/mcp"
+    }
+  }
+}
