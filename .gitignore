@@ -1,0 +1,8 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+run/
+debug_logs/
+*.sqlite3*
+.mcp-registry/

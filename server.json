@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.tubesaku/creator-insights",
+  "title": "TubeSaku Creator Insights",
+  "description": "Japanese YouTube research: stream schedules, live broadcasts, VTuber debuts, game and cover trends",
+  "version": "0.2.0",
+  "websiteUrl": "https://tubesaku.com/ai-data",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tubesaku.com/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/webbigdata-jp/tubesaku-mcp-server",
+    "source": "github"
+  }
+}
